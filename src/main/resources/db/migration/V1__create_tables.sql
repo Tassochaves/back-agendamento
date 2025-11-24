@@ -26,7 +26,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- c um TRIGGER associado a tb_agendamento
+-- cria um TRIGGER associado a tb_agendamento
 CREATE TRIGGER trg_set_atualizado_em
 BEFORE UPDATE ON tb_agendamento
 FOR EACH ROW
