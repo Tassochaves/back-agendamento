@@ -36,19 +36,19 @@ public class AgendamentoMapper {
             agendamento.getAtualizadoEm());
     }
 
-    public static void merge(Agendamento agendamento, AgendamentoUpdateRequest requestUpdate){
+    public static void merge(Agendamento agendamento, AgendamentoUpdateRequest updateRequest){
 
-        if(requestUpdate.titulo() != null){
-            agendamento.setDescricao(requestUpdate.descricao());
+        if(updateRequest.titulo() != null){
+            agendamento.setDescricao(updateRequest.descricao());
         }
-        if(requestUpdate.descricao() != null){
-            agendamento.setTitulo(requestUpdate.titulo());
+        if(updateRequest.descricao() != null){
+            agendamento.setTitulo(updateRequest.titulo());
         }
-        if(requestUpdate.dataInicio() != null){
-            agendamento.setDataFim(requestUpdate.dataInicio());
+        if(updateRequest.dataInicio() != null){
+            agendamento.setDataFim(updateRequest.dataInicio());
         }
-        if(requestUpdate.dataFim() != null){
-            agendamento.setDataFim(requestUpdate.dataFim());
+        if(updateRequest.dataFim() != null){
+            agendamento.setDataFim(updateRequest.dataFim());
         }
     }
 }
