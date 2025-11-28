@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:8080
+
+###
+POST {{baseUrl}}/api/agendamento
+Content-Type: application/json
+
+{
+    "titulo": "Reunião Sprint",
+    "descricao": "Rotinas da semana",
+    "dataInicio": "2025-11-27T22:23:33",
+    "dataFim": "2025-11-28T10:23:33",
+    "usuario": "Usuario teste"
+}
+
+
+###
+GET {{baseUrl}}/api/agendamento/1
+
+
+###
+PUT {{baseUrl}}/api/agendamento/1
+Content-Type: application/json
+
+{
+    "dataInicio": "2025-12-22T10:23:33",
+    "dataFim": "2025-12-30T10:23:33"
+}

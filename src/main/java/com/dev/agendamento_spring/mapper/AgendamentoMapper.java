@@ -39,13 +39,13 @@ public class AgendamentoMapper {
     public static void merge(Agendamento agendamento, AgendamentoUpdateRequest updateRequest){
 
         if(updateRequest.titulo() != null){
-            agendamento.setDescricao(updateRequest.descricao());
-        }
-        if(updateRequest.descricao() != null){
             agendamento.setTitulo(updateRequest.titulo());
         }
+        if(updateRequest.descricao() != null){
+            agendamento.setDescricao(updateRequest.descricao());
+        }
         if(updateRequest.dataInicio() != null){
-            agendamento.setDataFim(updateRequest.dataInicio());
+            agendamento.setDataInicio(updateRequest.dataInicio());
         }
         if(updateRequest.dataFim() != null){
             agendamento.setDataFim(updateRequest.dataFim());
